@@ -1,0 +1,89 @@
+/* ============================================================
+   ¹«¹²²¿·Ö
+   ============================================================ */
+
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,fieldset,legend,input,select,textarea,button,th,td,img,pre{margin:0;padding:0;}
+body{color:#595959;background:#f0f2f5;}
+body,input,textarea{font:14px/1.6 "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;}
+code,kbd,pre,samp{font-family:Consolas,Menlo,Courier,monospace;}
+textarea{resize:none;overflow-y:auto;font-size:100%;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500;}
+ul,ol,li{list-style:none;}
+img,fieldset{border:none;}
+i,em{font-style:normal;}
+img{vertical-align:top;}
+table{width:100%;border-collapse:collapse;border-spacing:0;word-break:break-all;word-wrap:break-word;}
+
+::-moz-placeholder{color:#a3a3a3;}
+::-webkit-input-placeholder{color:#a3a3a3;}
+:-ms-input-placeholder{color:#a3a3a3;}
+
+a{color:#459ae9;text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.hide{display:none !important;}
+
+.ui-tooltips{width:260px;line-height:30px;top:0;left:50%;margin-left:-130px;text-align:center;position:fixed;z-index:1000;color:#ffffff;background:#44b549;}
+
+.ui-wrapper{padding:0 48px;}
+.ui-header{padding:0 48px;margin:0 -48px;background:#ffffff;overflow:hidden;}
+.ui-header .ui-logo{float:left;width:230px;padding:22px 0;}
+.ui-header .ui-logo a{display:block;height:36px;line-height:999px;overflow:hidden;background:url("https://wx.gtimg.com/pay/img/common/logo.png?v=20160114") no-repeat;}
+.ui-header .ui-nav{float:right;}
+.ui-header .ui-nav li{float:left;}
+.ui-header .ui-nav li a{display:block;height:76px;line-height:76px;padding:0 24px;color:#595959;font-size:16px;}
+.ui-header .ui-nav li a:hover{color:#595959;text-decoration:none;border-bottom:4px solid #a0a3ab;}
+.ui-header .ui-nav .selected a,.ui-header .ui-nav .selected a:hover{border-bottom:4px solid #44b549;}
+.ui-container{padding:24px 0;margin:24px 0;background:#ffffff;display:table;width:100%;table-layout:fixed;*overflow:hidden;border-radius:4px;-webkit-border-radius:4px;}
+.ui-content,.ui-sidebar{display:table-cell;*margin-bottom:-9999px;*padding-bottom:9999px;*display:inline;*zoom:1;*float:left;}
+.ui-content{padding:0 40px;}
+.ui-sidebar{width:300px;border-right:1px solid #e9e9e9;vertical-align:top;}
+.ui-sidebar li a{display:block;color:#595959;line-height:42px;padding:0 24px;}
+.ui-sidebar li a:hover{color:#44b549;text-decoration:none;}
+.ui-sidebar li.selected a{color:#44b549;border-right:4px solid #44b549;background:#d2efd3;}
+
+
+.ui-footer{padding-bottom:30px;color:#8d8d8d;text-align:center;font:12px/1.6 tahoma,arial,"Hiragino Sans GB",\5B8B\4F53,sans-serif;}
+.ui-footer a{color:#8d8d8d;}
+.ui-footer a:hover{color:#459ae9;}
+.ui-footer .vs{color:#cccccc;margin:0 10px;font-family:arial;}
+
+.ui-article{line-height:1.8;}
+.ui-article .title-one{font-size:28px;margin:8px 0 24px;}
+.ui-article .title-two{font-size:22px;margin:24px 0 6px;}
+.ui-article .paragraph{margin:10px 0;}
+.ui-article .lists li{margin-left:20px;padding-left:4px;list-style:circle;}
+
+
+/* ´úÂëÑÝÊ¾ */
+.example{border:1px solid #e9e9e9;-webkit-border-radius:4px;border-radius:4px;margin:6px 0 16px;}
+.example .example-code{position:relative;}
+.example .example-demo{padding:40px 20px;border-bottom:1px dotted #e9e9e9;}
+.example .example-code .copy-text{background:#ffffff;border:1px solid #e1e1e8;-webkit-border-radius:0  0 0 4px;border-radius:0  0 0 4px;color:#767676;cursor:pointer;display:block;font-size:12px;padding:5px 8px;position:absolute;right:-1px;top:-1px;z-index:10;}
+.example .example-code .copy-text:hover{background:#dadbe0;}
+.example .example-tips{padding:20px 20px;border-top:1px dotted #e9e9e9;}
+
+
+
+/* ============================================================
+   Ë½ÓÐ²¿·Ö
+   ============================================================ */
+
+/* ×é¼þ
+------------------------------ */
+.ui-button .example-demo .btn{margin:0 8px 12px 0;}
+.ui-breadcrumb .bread-crumb{padding:0;}
+
+
+/* ×ÊÔ´
+------------------------------ */
+.ui-resource .resource-cards{margin:0 8px 12px 0;}
+.ui-resource .resource-card{width:230px;padding:40px 30px 40px 90px;border:1px solid #e9e9e9;border-radius:4px;color:#777;display:inline-block;font-size:12px;margin:20px 40px 10px 0;overflow:hidden;}
+.ui-resource .resource-card:hover{box-shadow:0 3px 8px #d3ddeb;border-color:transparent}
+.ui-resource .resource-card .photo{float:left;margin-left:-65px;}
+.ui-resource .resource-card .title{display:block;font-size:16px;line-height:1.2;margin-bottom:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.ui-resource .resource-card .intro{display:block;}
+
+ 
+
+ 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi"> 
+<!--     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" > -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" >
+    <meta name="format-detection" content="telephone=no" >
+    <meta name="format-detection" content="email=no" >
+    <link rel="shortcut icon" type="image/x-icon" href="https://wx.gtimg.com/core/favicon.ico"; />
+    <title><%=htmlWebpackPlugin.options.title%></title>
+</head>
+  <script type="text/javascript">
+        var TA_STATS_ARGS = {
+            rate: 1,
+            projectID: 511,
+            channelID:1453,
+         //   pageID: <%=htmlWebpackPlugin.options.pageID%>,
+            debug: false
+        }
+        var _speedMark = new Date();
+        
+    (function(){
+    //影藏分享按钮
+    if (typeof window.WeixinJSBridge == "undefined") {
+        document.addEventListener('WeixinJSBridgeReady', function() {
+            WeixinJSBridge.call('hideOptionMenu');
+        }, false);
+    } else {
+        WeixinJSBridge.call('hideOptionMenu');
+    }
+    })()
+
+
+ </script>
+ <script type="text/javascript">
+        var GLOBAL;
+        if (window.location.search.indexOf('debug1') > 0) {
+           try {
+            GLOBAL = JSON.parse(JSON.stringify(<%=htmlWebpackPlugin.options.data%>));
+          } catch (e) {
+              GLOBAL = {ret_code: -1,ret_msg:"please check your network"}
+          }
+ /*   
+        
+         GLOBAL = {
+                ret_code:0,
+                data:{
+                    }
+            }*/
+        }else{
+              try {
+                  GLOBAL = JSON.parse('<?php echo $DATA; ?>');
+              } catch (e) {
+                  GLOBAL = {ret_code: -1,ret_msg:"please check your network"}
+              }       
+        }
+
+  </script>
+<body ontouchstart >
+    <div id="app"></div>
+    <div class="watermark" id="watermark" style="z-index: 99;"> <?php echo $water_mark; ?> </div>
+
+sadsdas
+
+
+
+
+<%= htmlWebpackPlugin.files.webpackManifest %>
+<script src="//wx.gtimg.com/static/cdn_data_open/js/jweixin-1.3.2.js"></script>
+<% if(htmlWebpackPlugin.options.needchart){%>
+<script src="//wx.gtimg.com/static/cdn_data_open/js/echarts.min.4.1.0.js?v=1"></script>
+<%}%>
+</body>
+
+<% if(htmlWebpackPlugin.options.needdebug){%>
+<script src="//cdn.jsdelivr.net/npm/eruda"></script>
+<script>eruda.init();</script>
+<%}%>
+<script src="https://wx.gtimg.com/user_analysis/2.0/lib-min-2.1.js?v=0.1"></script>
+
+<script type="text/javascript">
+      
+    document.body.addEventListener('touchmove', function (event) {
+        event.preventDefault();
+    }, false);
+</script>
+</html>

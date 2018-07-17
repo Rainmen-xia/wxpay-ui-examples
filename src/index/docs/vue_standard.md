@@ -1,4 +1,4 @@
-#Vue-Component-Standard-Guide
+# Vue-Component-Standard-Guide
 
 ### 1 Vue属性书写顺序
 
@@ -80,7 +80,7 @@ Components Should Be Focused, Independent, Reusable, Small & Testable (FIRST)
 
 <!-- good -->
 <a @click="pass">pass</a>
-
+```
 ### 4 表达式简化
 
 Vue.js 的表达式是 100% 的 Javascript 表达式。这使得其功能性很强大，但也带来潜在的复杂性。因此，你应该尽量保持表达式的简单化。
@@ -93,7 +93,7 @@ IDE 基本上不能识别行内表达式语法，所以使用行内表达式 IDE
 如果你发现写了太多复杂并难以阅读的行内表达式，那么可以使用 method 或是 computed 属性来替代其功能。
 
  
- ```
+ ```html
 
 <!-- 推荐 -->
 <template>
@@ -144,7 +144,7 @@ IDE 基本上不能识别行内表达式语法，所以使用行内表达式 IDE
 使用 props 之前先检查该 prop 是否存在
 
 
-```
+```html
 <template>
   <input type="range" v-model="value" :max="max" :min="min">
 </template>
@@ -172,7 +172,7 @@ IDE 基本上不能识别行内表达式语法，所以使用行内表达式 IDE
 
 ### 6 使用组件名作为样式作用域空间
 
-```
+```css
 .compName {}
 .compName .div{
     
